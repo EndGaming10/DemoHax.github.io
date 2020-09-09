@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Info meta tags, important for social media + SEO -->
-	<title>MyServer - Official Website</title>
-	<meta name="description" content="MyServer is a new and awesome Minecraft server. You can join with the IP 'play.myserver.net'.">
-	<meta property="og:title" content="MyServer - Official Website Portal">
-	<meta property="og:site_name" content="MyServer">
-	<meta property="og:description" content="MyServer is a new and awesome Minecraft server. You can join with the IP 'play.myserver.net'.">
-	<meta property="og:image" content="https://bybilly.uk/portal/img/minecraft.jpg">
-	<meta property="og:url" content="https://bybilly.uk/">
-	<meta name="twitter:card" content="summary_large_image">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: left;
+}
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+li a {
+  transition: 0.3s;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.downloadnavbtn{
+    position: absolute;
+    right: 425px;
+}
+
+.contactnavbtn{
+    position: absolute;
+    right: 535px;
+}
+
+.aboutnavbtn{
+    position: absolute;
+    right: 630px;
+}
+
+.customfont{
+    font-size: 3.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #3fb2d9; /* Blue */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+</style>
 </head>
 <body>
-	<div class="container">
-		<div class="logo">
-			<!-- In the img folder, upload your logo -->
-			<!-- Make sure you name it 'logo.png' -->
-			<img src="img/logo.png" alt="MyServer logo">
-		</div>
 
-		<div class="items">
-			<!-- Replace # with your forum URL-->
-			<a href="#" class="item forums">
-			<div>
-				<img src="img/discordlogo_1_175x175.png" alt="Minecraft forums icon" class="img">
-				<p class="subtitle">Chat In Our</p>
-				<p class="title">Discord</p>
-			</div>
-			</a>
+<ul>
+  <li class="downloadnavbtn"><a href="#">Download</a></li>
+  <li class="contactnavbtn"><a href="#">Contact</a></li>
+  <li class="aboutnavbtn"><a href="#">About</a></li>
+  <a class="customfont" href="https://demohax.github.io">
+        <span style='color: #f24441'>Demo</span>
+        <span style='color: #4287f5'>Hax</span>
+  </a>
+</ul>
 
-			<!-- Replace # with your store URL -->
-			<a href="files/DemoHax-Client-v1-MC1.16.2.jar" class="item store">
-			<div>
-				<img src="img/Pngtreevector_download_icon_3772809_175x175.png" alt="Minecraft store icon" class="img">
-				<p class="subtitle">Click Here To</p>
-				<p class="title">Download DemoHax</p>
-			</div>
-            </a>
-            
-            <a href="files/fabric-api-0.20.1+build.401-1.16.jar" class="item store">
-			<div>
-				<img src="img/Pngtreevector_download_icon_3772809_175x175.png" alt="Minecraft store icon" class="img">
-				<p class="subtitle">Click Here To</p>
-				<p class="title">Download Fabric API</p>
-			</div>
-			</a>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Info: This Site Is Not Finished!
+  </div>
 
-			<!-- Replace # with your vote URL -->
-			<a href="#" class="item vote">
-			<div>
-				<img src="img/changelogicon_175x175.png" alt="Minecraft voting icon" class="img">
-				<p class="subtitle">Latest</p>
-				<p class="title">ChangeLog</p>
-			</div>
-			</a>
-
-
-		</div>
-
-		
-	</div>
-
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
-	<script src="js/firefly.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
